@@ -1,0 +1,21 @@
+ div {
+    background-color: black;
+    color: white;
+ }
+.negative  {
+  background-color: black;
+  color: white;
+}
+.positive  {
+  background-color: #ff7961;
+  color: whitesmoke;
+}
+
+.huge{
+    font-size: xx-large;
+}
+
+#firstName{
+    font-weight:bold;
+    font-size: large;
+}
