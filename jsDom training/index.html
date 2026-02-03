@@ -6,8 +6,10 @@
     <script>
         console.log("salt> We are writing to the console");
         console.log("salt> In the head");
-        const name = getCompanyName();
-        console.log(`salt> In the head. Company name is ${name}`);
+        function getCompanyName() {
+            return "SALT";
+        }
+
     </script>
 </head>
 <body>
@@ -20,10 +22,9 @@
     <div>content 3</div>
 </main>
 <script>
-    function getCompanyName() {
-        return "SALT";
-    }
     console.log("salt> End of body");
+    const name = getCompanyName();
+    console.log(`salt> End of body. Company name is ${name}`);
 </script>
 </body>
 </html>
