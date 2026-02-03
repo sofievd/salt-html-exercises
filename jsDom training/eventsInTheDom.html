@@ -63,6 +63,11 @@
             console.log("DOM loaded!");
             addResultStyling()
         });
+
+        const button = document.getElementById("inversionButton");
+        button.addEventListener("click", () =>{
+            invertColorsOfResults();
+        });
     </script>
 </head>
 <body>
@@ -71,7 +76,7 @@
     <h1 class="mainResult">-1000</h1>
     <h1 class="mainResult">A name - not a number</h1>
 </main>
-<button onclick="invertColorsOfResults();">Invert colors</button>
+<button id="inversionButton" >Invert colors</button>
 
 </body>
 </html>
