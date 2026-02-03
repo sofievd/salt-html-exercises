@@ -62,12 +62,13 @@
         document.addEventListener("DOMContentLoaded", () =>{
             console.log("DOM loaded!");
             addResultStyling()
+
+            const button = document.getElementById("inversionButton");
+            button.addEventListener("click", () =>{
+                invertColorsOfResults();
+            });
         });
 
-        const button = document.getElementById("inversionButton");
-        button.addEventListener("click", () =>{
-            invertColorsOfResults();
-        });
     </script>
 </head>
 <body>
