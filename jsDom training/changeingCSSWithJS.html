@@ -38,6 +38,15 @@
         element.classList.add("positiveResult");
     }
 
+    function addResultStyling() {
+        const mainResultElements = document.querySelectorAll(".mainResult");
+
+        for (let i = 0; i < mainResultElements.length; i++) {
+            const content = mainResultElements[i].textContent;
+
+            addStyleBasedOfContent(mainResultElements[i], content);
+        }
+    }
 </script>
 </body>
 </html>
