@@ -9,7 +9,8 @@
                 .then((response) => response.json())
                 .then((data) => console.log({ data }));
         }
-        getUsers();
+        document.addEventListener('DOMContentLoaded', getUsers)
+
     </script>
 </head>
 <body>
