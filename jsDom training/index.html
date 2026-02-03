@@ -21,6 +21,13 @@
             mainElement.appendChild(ulElement);
         }
 
+        function removedivById(id){
+            const divToRemove = document.getElementById(id);
+            if(divToRemove != undefined){
+                divToRemove.remove();
+            }
+        }
+
     </script>
 </head>
 <body>
@@ -53,6 +60,7 @@
     }
 
     addListInMain(5);
+    removedivById("companyName");
 </script>
 </body>
 </html>
