@@ -7,11 +7,26 @@
     <script>
         console.log("salt> We are writing to the console");
         console.log("salt> In the head");
+
+        function addListInMain(numberOfListItems) {
+            const ulElement = document.createElement("ul");
+
+            for (let i = 0; i < numberOfListItems; i++) {
+                const liItem = document.createElement("li");
+                liItem.textContent = `Item #${i + 1}`;
+
+                ulElement.appendChild(liItem);
+            }
+            const mainElement = document.querySelector("main");
+            mainElement.appendChild(ulElement);
+        }
+
     </script>
 </head>
 <body>
 <script>
     console.log("salt> Start of body");
+
 </script>
 <main>
     <div name="content" class="big bold bright">content 1</div>
@@ -25,17 +40,19 @@
     document.getElementById("companyName").innerHTML = companyName;
 
     const boldNodes = document.getElementsByClassName("bold");
-    for(let i=0; i<boldNodes.length; i++) {
+    for (let i = 0; i < boldNodes.length; i++) {
         boldNodes[i].innerHTML += "... and bold";
     }
 
     const companyNameElement = document.querySelector("#companyName");
     companyNameElement.innerHTML = companyName + " set using a query selector by id";
 
-const boldNodesQuerySelected = document.querySelectorAll(".bold");
-for(let i=0; i<boldNodesQuerySelected.length; i++) {
-    boldNodesQuerySelected[i].innerHTML += "... and bold selected with query.";
-}
+    const boldNodesQuerySelected = document.querySelectorAll(".bold");
+    for (let i = 0; i < boldNodesQuerySelected.length; i++) {
+        boldNodesQuerySelected[i].innerHTML += "... and bold selected with query.";
+    }
+
+    addListInMain(5);
 </script>
 </body>
 </html>
