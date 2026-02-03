@@ -15,14 +15,14 @@
 </script>
 <main>
     <div>content 1</div>
-    <div>content 2</div>
+    <div id="companyName">content 2</div>
     <div>content 3</div>
 </main>
 <script>
     console.log("salt> End of body");
     const companyName = myFunctions.getCompanyName();
     console.log(`salt> End of body. Company name is ${name}`);
-    document.getElementsByTagName("div")[1].innerHTML = companyName;
+    document.getElementById("companyName").innerHTML = companyName;
 </script>
 </body>
 </html>
